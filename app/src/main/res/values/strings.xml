@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Передача данных</string>
+    <string name="button_Transfer">Передать</string>
+    //Hints
+    <string name="hint_input_1">Кому</string>
+    <string name="hint_input_2">Описание</string>
+    <string name="description_result">  Результат  </string>
+    <string name="uznat">Узнать</string>
+    <string name="viborText">Выбери:</string>
+    <string name="vibor1">Первый вариант</string>
+    <string name="vibor2">Второй вариант</string>
+    <string name="vibor3">Третий вариант</string>
+
+
+</resources>
