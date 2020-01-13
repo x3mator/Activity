@@ -7,18 +7,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.PopupMenu;
+import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.PopupMenu.OnMenuItemClickListener;
-import android.app.Activity;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements OnMenuItemClickListener {
 
     static private final int CHOOSE_VIBOR = 0;
     public final static String VIBOR = "VIBOR";
+    public static String popstr = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,17 +73,21 @@ public class MainActivity extends AppCompatActivity implements OnMenuItemClickLi
 
 
     public boolean onMenuItemClick(MenuItem item) {
+        TextView infoTextView = findViewById(R.id.textView_popup);
+
         switch (item.getItemId()) {
             case R.id.item1:
-                Toast.makeText(this, "PopUP 1", Toast.LENGTH_SHORT).show();
-                return true;
+                popstr = getString(R.string.popup1);
+                break;
             case R.id.item2:
-                Toast.makeText(this, "PopUP 2", Toast.LENGTH_SHORT).show();
-                return true;
+                popstr = getString(R.string.popup2);
+                break;
             case R.id.item3:
-                Toast.makeText(this, "PopUP 3", Toast.LENGTH_SHORT).show();
-                return true;
+                popstr = getString(R.string.popup3);
+                break;
         }
+        Toast.makeText(this, popstr, Toast.LENGTH_SHORT).show();
+        infoTextView.setText(popstr);
         return true;
     }
 

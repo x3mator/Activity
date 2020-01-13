@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
         android:id="@+id/item1"
-        android:title="Пункт 1"
+        android:title="@string/popup1"
         android:visible="true" />
     <item
         android:id="@+id/item2"
-        android:title="Пункт 2"
-        android:visible="true"/>
+        android:title="@string/popup2"
+        android:visible="true" />
     <item
         android:id="@+id/item3"
-        android:title="Пункт 3"
-        android:visible="true"/>
+        android:title="@string/popup3"
+        android:visible="true" />
 </menu>

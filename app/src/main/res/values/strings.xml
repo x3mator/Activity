@@ -11,5 +11,9 @@
     <string name="vibor2">Второй вариант</string>
     <string name="vibor3">Третий вариант</string>
 
+    <string name="popup1">PopUP 1</string>
+    <string name="popup2">PopUP 2</string>
+    <string name="popup3">PopUP 3</string>
+
 
 </resources>
