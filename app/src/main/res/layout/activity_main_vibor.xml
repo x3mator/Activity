@@ -10,39 +10,38 @@
 
     <TextView
         android:id="@+id/textView_viborText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/viborText"
-        android:editable="false"
         android:textSize="18sp" />
 
     <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/rBtnVibor1"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vibor1"
             android:checked="false"
-            android:onClick="onRadioClick"/>
+            android:onClick="onRadioClick"
+            android:text="@string/vibor1" />
 
         <RadioButton
             android:id="@+id/rBtnVibor2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vibor2"
             android:checked="false"
-            android:onClick="onRadioClick"/>
+            android:onClick="onRadioClick"
+            android:text="@string/vibor2" />
 
         <RadioButton
             android:id="@+id/rBtnVibor3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vibor3"
             android:checked="false"
-            android:onClick="onRadioClick"/>
+            android:onClick="onRadioClick"
+            android:text="@string/vibor3" />
     </RadioGroup>
 
 </LinearLayout>
